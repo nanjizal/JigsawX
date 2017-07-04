@@ -1,0 +1,9 @@
+{
+  "name": "jigsawx",
+  "main": "jigsawDivtastic.html",
+  "window": {
+    "toolbar": false,
+    "width": 800,
+    "height": 600
+  }
+}
