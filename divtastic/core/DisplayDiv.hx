@@ -10,6 +10,7 @@ import js.html.DivElement;
 import js.html.CSSStyleSheet;
 import js.html.VideoElement;
 import js.html.Event;
+import js.html.HTMLDocument;
 import js.html.CanvasElement;
 import js.html.CanvasRenderingContext2D;
 import js.html.CSSStyleDeclaration;
@@ -69,7 +70,7 @@ class DisplayDiv
         
         if( isVideo( img ) )
         {
-            _vid = cast ROOT().createVideoElement();
+            _vid = ROOT().createVideoElement();
             _dom = cast _vid;
         }
         else

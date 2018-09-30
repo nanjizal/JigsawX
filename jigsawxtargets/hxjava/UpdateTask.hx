@@ -33,9 +33,9 @@ package jigsawxtargets.hxjava;
 
 import java.util.Timer;
 import java.util.TimerTask;
-import javax.swing.JPanel;
+import java.javax.swing.JPanel;
 import java.lang.System;
-import Int64;
+import java.StdTypes;// Int64
 
 class UpdateTask extends TimerTask
 {
@@ -78,7 +78,7 @@ class UpdateTask extends TimerTask
         ups             = 0;
     }
     
-    @:overload public function run()
+    @:overload override public function run()
     {
         
         //synchronized( mutex )

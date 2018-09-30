@@ -35,7 +35,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 
-import javax.swing.JPanel;
+import java.javax.swing.JPanel;
 
 import jigsawxtargets.hxjava.GraphicsTexture;
 
@@ -60,8 +60,8 @@ class Surface extends JPanel
     {
         super( true );
     }
-    
-    @:overload public function paintComponent( g: Graphics )
+    @:overload override 
+    public function paintComponent( g: Graphics )
     {
         
         #if applet

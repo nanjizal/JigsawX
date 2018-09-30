@@ -3,7 +3,8 @@
 #-cmd lime test windows -neko
 #-cmd lime test mac 
 #--next
--cmd lime test mac -neko
+-cmd haxelib run nme cpp -bin binNme
+#-cmd lime test mac -neko
 #-cmd lime test linux
 #-cmd lime test linux -neko
 #-cmd lime test ios

@@ -2,9 +2,9 @@ package core;
 import js.Lib;
 import js.Browser;
 import core.DisplayDiv;
-import js.html.Document;
+import js.html.HTMLDocument;
 class GlobalDiv{
-    public static var _root:  Document = Browser.document;
+    public static var _root: HTMLDocument = Browser.document;
     public static function ROOT( d: Dynamic ){
         return _root;
         

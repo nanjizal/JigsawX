@@ -11,6 +11,12 @@
 #
 --next
 -cmd cd java/src 
--cmd javac jigsawxtargets/hxjava/JigsawxJava.java -d ../
+#-cmd javac jigsawxtargets/hxjava/JigsawxJava.java -d ../
 -cmd cd ..
--cmd java jigsawxtargets/hxjava/JigsawxJava
+-cmd cd ..
+#-cmd java jigsawxtargets/hxjava/JigsawxJava
+#-cmd java -jar *.jar
+-cmd cp java/*.jar bin/
+-cmd rm -R java
+-cmd cd bin
+-cmd java -jar *.jar

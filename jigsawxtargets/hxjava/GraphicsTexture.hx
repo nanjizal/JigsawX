@@ -42,14 +42,14 @@ import java.awt.Rectangle;
 import java.awt.image.RescaleOp;
 
 import java.NativeArray;
-import javax.imageio.ImageIO;
+import java.javax.imageio.ImageIO;
 
 import jigsawx.JigsawPiece;
 import jigsawx.math.Vec2;
 import jigsawxtargets.hxjava.JigsawxJava;
 
 #if applet
-    import javax.swing.JApplet;
+    import java.javax.swing.JApplet;
     import java.net.URL;
     
 #else

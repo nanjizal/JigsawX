@@ -32,7 +32,7 @@
 package jigsawxtargets.hxjava;
 
 import jigsawx.Jigsawx;
-import javax.swing.JPanel;
+import java.javax.swing.JPanel;
 import java.awt.Color;
 import java.awt.Rectangle;
 import java.awt.Cursor;
@@ -45,20 +45,20 @@ import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import java.awt.Image;
 import java.awt.Point;
-import javax.swing.JSlider;
-import Int64;
+import java.javax.swing.JSlider;
+import java.StdTypes;// Int64
 
 #if applet
     import javax.swing.JApplet;
 #elseif update_task
     import java.lang.System;
-    import javax.swing.JFrame;
+    import java.javax.swing.JFrame;
     import java.util.Timer;
     import java.util.TimerTask;
     import jigsawxtargets.hxjava.UpdateTask;
 #else
     import java.lang.System;
-    import javax.swing.JFrame;
+    import java.javax.swing.JFrame;
 #end
 
 class JigsawxJava
@@ -81,7 +81,10 @@ implements MouseMotionListener
     var currentGraphic:             GraphicsTexture;
     var pressPoint:                 Point;
     var enabledMove:                Bool;
-    
+    var up                          = KeyEvent.VK_UP;
+    var down                        = KeyEvent.VK_DOWN;
+    var right                       = KeyEvent.VK_RIGHT;
+    var left                        = KeyEvent.VK_LEFT;                      
     #if applet
         public static var japplet:  JigsawxJava;
     #elseif update_task
@@ -283,13 +286,13 @@ implements MouseMotionListener
         var location = currentGraphic.getLocation();
         switch( e.getKeyCode() )
         {
-            case KeyEvent.VK_UP:
+            case up:
                 currentGraphic.setLocation( location.x, location.y - 1 );
-            case KeyEvent.VK_DOWN:
+            case down:
                 currentGraphic.setLocation( location.x, location.y + 1 );
-            case KeyEvent.VK_LEFT:
+            case left:
                 currentGraphic.setLocation( location.x - 1, location.y );
-            case KeyEvent.VK_RIGHT:
+            case right:
                 currentGraphic.setLocation( location.x + 1, location.y );
         }
         
